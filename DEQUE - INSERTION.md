@@ -1,44 +1,45 @@
-# Exp.No:39  
-## DEQUE - INSERTION
+# Exp.No:38  
+## Deque - DELETION
 
 ---
 
 ### AIM  
-To write a Python program to insert elements at REAR END of deque using a collection built-in function.
+To write a Python program to delete elements at FRONT END of deque using a collection built-in function.
 
 ---
 
 ### ALGORITHM  
 
 1. Import the `deque` class from the `collections` module.  
-2. Initialize an empty deque.  
-3. Start an infinite loop using `while True`.  
-4. In each iteration, take input from the user.  
-5. If the input is an empty string, break the loop.  
-6. If the input is not empty, convert it to an integer and append it to the deque.  
-7. After the loop ends, append the values `14` and `15` to the deque.  
-8. Print the message `"The deque after appending at right is :"`.  
-9. Print the contents of the deque.  
+2. Create an empty deque.  
+3. Define how many elements to input (e.g., 3 inputs as in the example).  
+4. Loop through the range of input size:  
+   - Read an integer from the user.  
+   - Append the integer to the deque.  
+5. Remove the front element of the deque using `popleft()`.  
+6. Print the final deque after deletion.  
 
 ---
 
 ### PROGRAM  
 
 ```
+Reg.No: 212222060162
+Name: Narthika S
+
 import collections
 n1=int(input())
 n2=int(input())
 n3=int(input())
-de=collections.deque([n1,n2,n3])
-
-de.append(14)
-de.append(15)
-print("The deque after appending at right is : ")
+de=collections.deque([n1, n2, n3])
+de.popleft()
+print("The deque after deleting is : ")
 print(de)
 ```
 
 ### OUTPUT
-<img width="805" height="293" alt="image" src="https://github.com/user-attachments/assets/a6a83e74-8960-44ea-befa-9d3a2caef78d" />
+
+<img width="813" height="299" alt="image" src="https://github.com/user-attachments/assets/e43bb5d9-9f5d-4191-97b6-ea4606e48640" />
 
 ### RESULT
-Thus the Python program to insert elements at REAR END of deque using a collection built-in function is implemented and executed successfully.
+Thus Python program to delete elements at FRONT END of deque using a collection built-in function is implemented and executed successfully.
